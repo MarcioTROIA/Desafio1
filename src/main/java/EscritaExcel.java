@@ -13,8 +13,8 @@ public class EscritaExcel extends CalculoMedia implements Escrita {
 	FileOutputStream fileOut;
 	int linha;
 	
-	public EscritaExcel(String nomeArquivo) throws FileNotFoundException {
-		super();
+	public EscritaExcel(String nomeArquivo, int qtdeNumeros) throws FileNotFoundException {
+		super(qtdeNumeros);
 		fileOut = new FileOutputStream(nomeArquivo + ".xlsx");
 		wb = new XSSFWorkbook();
 		sheet = wb.createSheet("Planilha1");

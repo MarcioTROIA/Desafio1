@@ -6,8 +6,8 @@ public class EscritaTxt extends CalculoMedia implements Escrita {
 	private FileWriter arq;
 	private PrintWriter gravarArq;
 	
-	public EscritaTxt(String nomeArquivo) throws IOException {
-		super();
+	public EscritaTxt(String nomeArquivo, int qtdeNumeros) throws IOException {
+		super(qtdeNumeros);
 		arq = new FileWriter(nomeArquivo + ".txt");
 		gravarArq = new PrintWriter(arq);
 	}
