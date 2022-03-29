@@ -11,9 +11,7 @@ public class Programa {
 		
 		Scanner scanner = new Scanner(System.in);
 		
-		int contador = 0;
-		
-		while (contador < qtdeNumeros) {
+		while (escritores[0].getIndice() < qtdeNumeros) {
 			boolean invalido = false;
 			
 			if (scanner.hasNextInt()) {
@@ -23,7 +21,6 @@ public class Programa {
 					for (Escrita escritor : escritores) {
 						escritor.escreverNumero(valor);
 					}
-					contador++;
 				} else {
 					invalido = true;
 				}

@@ -17,4 +17,8 @@ public abstract class CalculoMedia {
 		for (int numero : numeros) soma += numero;
 		return soma / indice;
 	}
+	
+	protected int getIndice() {
+		return indice;
+	}
 }

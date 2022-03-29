@@ -21,4 +21,8 @@ public class EscritaTxt extends CalculoMedia implements Escrita {
 		gravarArq.print(super.calculaMedia());
 		arq.close();
 	}
+
+	public int getIndice() {
+		return super.getIndice();
+	}
 }
